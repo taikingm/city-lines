@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel='stylesheet' href='style.css'/>
+
+    <!-- Load Leaflet library -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+    <script src="script.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>City Lines</title>
+  </head>
+
+  <body>
+    <div class='body'>
+    <div class='sidebar'>
+        <div class='sidebarContent'>
+          <div class='details'>
+            <div class='title'>
+            <h1>City Lines</h1>
+            </div>
+            <div class='paragraphs'>
+            <p>
+               These are four maps of different cities around the world.<br>
+               Top Left is <a href='https://www.tokyometro.jp/en/' target="_blank" >Tokyo</a> <br>
+               Top Right is <a href='https://www.ratp.fr/en' target="_blank">Paris</a><br>
+               Bottom Left is <a href='http://service.shmetro.com/en/' target="_blank"> Shanghai</a><br>
+               and the Bottom Right is <a href='http://www.mta.info/' target="_blank">New York</a><br>
+               Each have their subway lines shown to compare the density, structure length, and creation years.
+               Click on the lines to find out about their information.
+
+            </div>
+
+            </p>
+            <div class='middle'>
+            <p>
+              The basemap from Mapbox is created entirely of lines.
+              By only displaying lines of cities, it gives you an better idea of block sizes and the density of the street scape.
+              For instance, comparing at the same zoom level, New York has an extremely organized grid system compared to the others, Tokyo seems to have more streets overall with somewhat organized grids, and Shanghai has a lot of white space - may be structures or open space -.
+               <br>There are three zoom levels you can choose to view the map, click on the lines to show popups.
+            </p>
+            </div>
+            <div class='sources'>
+              <p>
+                Basemap created on Mapbox.<br>
+                Subway lines were taken from  Open Street Map, <a href='https://www.nextzen.org/metro-extracts/index.html' target="_blank">Nextzen Metro Extracts Shapefile</a>.<br>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class='mapBody'>
+        <div class="map-container">
+            <div class="map" id="mapOne">  </div>
+            <div class="map" id="mapTwo">  Paris </div>
+          <div class='map-bottom'>
+            <div class="map" id="mapThree"> Shanghai </div>
+            <div class="map" id="mapFour"> New York </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
