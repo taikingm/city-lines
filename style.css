@@ -1,0 +1,106 @@
+/* CSS files add styling rules to your content */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+}
+.body{
+    border: 1px solid #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #f0f0f0;
+  }
+.sidebar {
+    display: flex;
+    float: right;
+    font-family:courier, 'Harman Retro', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 30%;
+
+  }
+.middle{
+  width:80%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px 10px 10px 10px;
+  border-bottom: thick double #000000;
+}
+
+.sidebarContent{
+  color: #5995DA;
+  background-color: #f0f0f;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000000;
+}
+.details{
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000000;
+}
+
+.title{
+
+  font-family: courier, sans-serif;
+  display:flex;
+  float: right;
+  padding: 15px;
+  text-align: center;
+  width:100vh;
+}
+.paragraphs{
+  border-bottom: 2px solid #000000;
+  width: 80%;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 8px;
+}
+.sources{
+
+  float:left;
+  padding: 10px;
+  width:80%
+  }
+
+
+
+  .mapBody{
+    color: #;
+    background-color: #599da;
+    padding: 0;
+  }
+  .map-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 65vw;
+    height: 100vh;
+    float:right;
+    background-color: #f0f0f0;
+
+  }
+  .map-bottom{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .map{
+    height: 50vh;
+    float: left;
+    width: 50vh;
+    border: 1px solid;
+    border-color: #1D3023;
+  }
